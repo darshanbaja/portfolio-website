@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <h1 class="logo">Portfolio.</h1>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hello, It's Me</h2>
+      <h1>Darshan</h1>
+      <h3>And I'm a <span>Frontend Developer</span></h3>
+      <p>I specialize in building responsive, clean, and modern websites using HTML, CSS, and JavaScript.  
+         Skilled also in C, C++, Java, and Python.</p>
+
+      <!-- Social Icons -->
+      <div class="social-icons">
+        <a href="https://github.com/" target="_main"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/feed/" target="_main"><i class="fab fa-linkedin"></i></a>
+        <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
+      </div>
+
+      <!-- Button -->
+      <!-- <a href="#" class="btn">Download CV</a> -->
+    </div>
+    <div class="hero-img">
+      <img src="doc.JPG" alt="Darshan">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>About <span>Me</span></h2>
+      <h3>Frontend Developer</h3>
+      <p>I am a frontend developer who enjoys building websites that look good and are easy to use. 
+        I like solving problems, learning new technologies, and improving my coding skills.</p>
+      <!-- <a href="#contact" class="btn">Read More</a> -->
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>My <span>Services</span></h2>
+    <div class="service-container">
+      <div class="service-box">
+        <i class="fas fa-code"></i>
+        <h3>Web Development</h3>
+        <p>Building modern and responsive websites with clean code and great performance.</p>
+      </div>
+      <!-- <div class="service-box">
+        <i class="fas fa-paint-brush"></i>
+        <h3>UI/UX Design</h3>
+        <p>Designing simple, elegant, and user-friendly interfaces for web applications.</p>
+      </div> -->
+      <div class="service-box">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Programming</h3>
+        <p>Familiar with C, C++, Java, and Python for problem-solving and software development.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Latest <span>Projects</span></h2>
+    <div class="project-grid">
+      <div class="project-card"><img src="1.png" alt="Project 1">
+        <p>
+Built a Task Manager web app using Flask where users can create, edit, and manage tasks. 
+This project helped me learn backend development, routing, and connecting HTML with Python.
+</p>
+
+       </div>
+      <div class="project-card"><img src="4.png" alt="Project 2">
+        <p><a href="https://github.com/darshanbaja/employee_details" target="_main">View Project</a>
+Created an Employee Management System using Python, Django, and PostgreSQL. 
+It allows managing employee details, departments, and leave records with a simple interface. 
+Through this project, I learned about databases, backend frameworks, and building complete web apps.
+</p>
+
+      </div>
+      <!-- <div class="project-card"><img src="https://picsum.photos/402/250" alt="Project 3"></div>
+      <div class="project-card"><img src="https://picsum.photos/403/250" alt="Project 4"></div> -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact <span>Me</span></h2>
+    <div class="contact-box">
+             <pre>
+              <strong>Address:</strong>Baja house,Maninalkur village,
+               Bantwala D.K,karnataka India,574265
+         <strong>Email:</strong> darshanbirwaz963.com
+  <strong>Mobile:</strong> +91 7899107369
+            </pre>
+      <!-- <form id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="phno" placeholder="Phone Number" required>
+        <input type="email" id="email" placeholder="Email Address" required>
+         <input type="text" id="subject" placeholder="Email Subject" required> -->
+        <!-- <textarea id="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="btn">Send Message</button> 
+      </form> -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Darshan. All rights reserved.</p>
+  </footer>
+
+  <!-- Contact Form Script -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      
+
+      alert(`Message Sent!\n\nName: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`);
+    });
+  </script>
+</body>
+</html>
